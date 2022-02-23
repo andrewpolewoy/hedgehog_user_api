@@ -77,9 +77,8 @@
                 $(document).ready(function() {
 
                 var name = $('#nameUser').html();
-
                         $.ajax({
-                            url: 'http://localhost:8080/cabinet/users/'+ name,
+                            url: '${pageContext.request.contextPath}/cabinet/users/'+ name,
                             type: 'get',
                             success: function(response) {
                                 var len = response.length;
@@ -109,7 +108,7 @@
                 $('table').on('click', '#delete', function() {
                     var rowEl = $(this).closest('tr');
                     var id = rowEl.find('.id').text();
-                    var url = 'http://localhost:8080/cabinet/users/' + id;
+                    var url = '${pageContext.request.contextPath}/cabinet/users/' + id;
 
                     $.ajax({
                         url: url,
