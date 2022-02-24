@@ -17,10 +17,12 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @EnableWebMvc
 @ComponentScan("com.hedgehog.user_api.controller")
 public class WebConfig implements WebMvcConfigurer {
+
     @Bean
     public MappingJackson2HttpMessageConverter jsonHttpMessageConverter(ObjectMapper mapper) {
         return new MappingJackson2HttpMessageConverter(mapper);
     }
+
     @Bean
     public StringHttpMessageConverter stringHttpMessageConverter() {
         return new StringHttpMessageConverter();

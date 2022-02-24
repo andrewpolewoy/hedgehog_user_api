@@ -32,8 +32,8 @@ public class PersistencyConfig {
         Properties properties = new Properties();
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL10Dialect");
 //        properties.setProperty("hibernate.hbm2ddl","update");
-//        properties.setProperty("hibernate.hbm2ddl.auto", "update");
-        properties.setProperty("hibernate.hbm2ddl.auto", "create");
+        properties.setProperty("hibernate.hbm2ddl.auto", "update");
+//        properties.setProperty("hibernate.hbm2ddl.auto", "create");
         properties.setProperty("show_sql", "true");
 //        properties.setProperty("hibernate.default_schema", "user_api");
 
