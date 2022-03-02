@@ -11,9 +11,6 @@ https://user-api-hedgehog.herokuapp.com
 
 После чего можно регистрироватся и пользоваться приложением.
 
-Так же приложение доступно по адресу:
-https://user-api-hedgehog.herokuapp.com
-
 Особенности приложения:
 - После первого запуска в файле "src/main/resources/application.properties" надо поменять настройку (spring.jpa.hibernate.ddl-auto=create на spring.jpa.hibernate.ddl-auto=validate или spring.jpa.hibernate.ddl-auto=update).
 
